@@ -13,7 +13,6 @@
   "env": {
     "PASSWORD": {
       "description": "Create a password to log in to code-server",
-      "generator": "secret",
       "required": "true"
     }
   }
