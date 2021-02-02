@@ -16,5 +16,5 @@
       "required": "true"
     }
   },
-  "stack": "Container"
+  "stack": "container"
 }
