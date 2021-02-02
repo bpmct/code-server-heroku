@@ -1,0 +1,19 @@
+{
+  "name": "code-server-heroku-base",
+  "description": "A code-server environment designed to run in your Heroku",
+  "repository": "https://github.com/bpmct/code-server-manager",
+  "logo": "https://avatars.githubusercontent.com/u/22407953?s=460&u=32797cfb0541bebfcf10a4613f56a65acd9f516d&v=4",
+  "keywords": [
+    "node",
+    "express",
+    "code-server",
+    "cloud-development",
+    "heroku-api"
+  ],
+  "env": {
+    "PASSWORD": {
+      "description": "Create a password to log in to code-server",
+      "required": "true"
+    }
+  }
+}
