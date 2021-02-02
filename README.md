@@ -12,7 +12,7 @@ Note: Heroku does not have a persistant filesystem. Make sure you are using a gi
 
 ## Ways to get started:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bpmct/code-server-heroku/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bpmct/code-server-heroku/tree/main)
 
 Extending the base image:
 
