@@ -13,11 +13,11 @@
   "env": {
     "GIT_REPO": {
       "description": "URL of a git repo to clone (optional)",
-      "required": "false"
+      "required": false
     },
     "PASSWORD": {
       "description": "Create a password to log in to code-server with",
-      "required": "true"
+      "required": true
     }
   },
   "stack": "container"
