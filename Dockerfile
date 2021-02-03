@@ -8,7 +8,7 @@ COPY settings.json .local/share/code-server/User/settings.json
 
 # Clone a git project
 RUN mkdir /home/coder/project
-RUN [ -z "${GIT_REPO}" ] && git clone $GIT_REPO /home/coder/project; echo "No GIT_REPO specified"
+RUN [ -z "${GIT_REPO}" ] && echo "No GIT_REPO specified"; git clone $GIT_REPO /home/coder/project
 
 # Use bash shell
 ENV SHELL=/bin/bash
