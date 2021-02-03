@@ -4,7 +4,7 @@ FROM codercom/code-server:latest
 # RUN apt-get install -y 
 
 # Apply VS Code settings
-COPY settings.json .local/share/code-server/User
+COPY settings.json .local/share/code-server/User/settings.json
 
 # Clone a git project
 RUN mkdir /home/coder/project && cd /home/coder/project && if [[ -z "${GIT_REPO}" ]] ; then git clone $GIT_REPO /home/coder/project/. ; else echo "No $GIT_REPO config" ; fi
