@@ -8,7 +8,7 @@ COPY settings.json .local/share/code-server/User/settings.json
 
 # Clone a git project
 RUN mkdir /home/coder/project
-RUN if [ -z "$GIT_REPO" ]; \
+RUN if [ -z "${GIT_REPO}" ]; \
     then echo "No GIT_REPO specified"; \
     else git clone $GIT_REPO /home/coder/project; \
     fi 
