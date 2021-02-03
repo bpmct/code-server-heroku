@@ -1,20 +1,4 @@
-FROM debian:10
-
-RUN apt-get update \
- && apt-get install -y \
-    curl \
-    dumb-init \
-    htop \
-    locales \
-    man \
-    nano \
-    git \
-    procps \
-    openssh-client \
-    sudo \
-    vim.tiny \
-    lsb-release \
-  && rm -rf /var/lib/apt/lists/*
+FROM cdr/code-server:latest
 
 # https://wiki.debian.org/Locale#Manually
 RUN sed -i "s/# en_US.UTF-8/en_US.UTF-8/" /etc/locale.gen \
@@ -30,10 +14,6 @@ RUN ARCH="$(dpkg --print-architecture)" && \
     chmod 4755 /usr/local/bin/fixuid && \
     mkdir -p /etc/fixuid && \
     printf "user: coder\ngroup: coder\n" > /etc/fixuid/config.yml
-
-COPY release-packages/code-server*.deb /tmp/
-COPY ci/release-image/entrypoint.sh /usr/bin/entrypoint.sh
-RUN dpkg -i /tmp/code-server*$(dpkg --print-architecture).deb && rm /tmp/code-server*.deb
 
 EXPOSE 8080
 # This way, if someone sets $DOCKER_USER, docker-exec will still work as
