@@ -12,8 +12,7 @@
   ],
   "env": {
     "GIT_REPO": {
-      "description": "URL of a git repo to clone (optional)",
-      "required": "true"
+      "description": "URL of a git repo to clone (optional)"
     },
     "PASSWORD": {
       "description": "Create a password to log in to code-server with",
