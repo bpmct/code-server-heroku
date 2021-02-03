@@ -7,7 +7,11 @@ FROM codercom/code-server:latest
 COPY settings.json .local/share/code-server/User/settings.json
 
 # Clone a git project
-RUN [[ -z "${GIT_REPO}" ]] && echo "GIT_REPO is not configured" || git clone $GIT_REPO /home/coder/project/.
+RUN mkdir /home/coder/project
+RUN if [ -z "$GIT_REPO" ]; \
+    then git clone $GIT_REPO /home/coder/project; \
+    else echo "No GIT_REPO specified"; \
+    fi 
 
 # Use bash shell
 ENV SHELL=/bin/bash
