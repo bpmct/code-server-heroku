@@ -1,7 +1,10 @@
 FROM codercom/code-server:latest
 
-# Install dependencies:
-# RUN sudo apt-get install -y nano build-essential ...
+# Install dependencies on server:
+# RUN apt-get install -y 
+
+# Apply VS Code settings
+COPY settings.json ./local/share/code-server/User
 
 # Use bash shell
 ENV SHELL=/bin/bash
