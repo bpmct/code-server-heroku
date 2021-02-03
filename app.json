@@ -11,6 +11,10 @@
     "heroku-api"
   ],
   "env": {
+    "GIT_REPO": {
+      "description": "URL of a git repo to clone (optional)",
+      "required": "true"
+    },
     "PASSWORD": {
       "description": "Create a password to log in to code-server with",
       "required": "true"
