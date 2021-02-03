@@ -1,4 +1,4 @@
-FROM cdr/code-server:latest
+FROM codercom/code-server:latest
 
 # https://wiki.debian.org/Locale#Manually
 RUN sed -i "s/# en_US.UTF-8/en_US.UTF-8/" /etc/locale.gen \
