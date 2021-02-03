@@ -6,6 +6,8 @@ FROM codercom/code-server:latest
 # Apply VS Code settings
 COPY settings.json .local/share/code-server/User/settings.json
 
+RUN echo $GIT_REPO
+
 # Clone a git project
 RUN mkdir /home/coder/project
 RUN [ -z "${GIT_REPO}" ] && echo "No GIT_REPO specified"; git clone $GIT_REPO /home/coder/project
