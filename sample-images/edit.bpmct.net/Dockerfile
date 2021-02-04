@@ -11,6 +11,9 @@ USER coder
 # Install linter
 RUN code-server --install-extension esbenp.prettier-vscode --extensions-dir /home/coder/.local/share/code-server/extensions
 
+# Install GitLens
+RUN code-server --install-extension eamodio.gitlens --extensions-dir /home/coder/.local/share/code-server/extensions
+
 # Clone repo and add dependencies
 RUN git clone https://github.com/bpmct/bpmct.net.git
 # Install dependencies 
