@@ -1,0 +1,6 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "git.postCommitCommand": "sync",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

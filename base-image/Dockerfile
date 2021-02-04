@@ -1,7 +1,6 @@
 FROM codercom/code-server:latest
 
-# Install dependencies on server:
-# RUN apt-get install -y 
+USER coder
 
 # Apply VS Code settings
 COPY settings.json .local/share/code-server/User/settings.json
