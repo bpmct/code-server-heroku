@@ -6,6 +6,9 @@ USER root
 RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get install -y nodejs
 
+# Install tmux
+RUN apt-get install -y tmux
+
 USER coder
 
 # Install linter
