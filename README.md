@@ -24,7 +24,7 @@ RUN apt-get install -y ...
 
 ## Todo:
 
-- [ ] Create base image
+- [x] Create base image
 - [ ] Create sample images
 - [ ] Create GitHub action to build
-- [ ] Impliment code-server-controller app
+- [ ] Simplify image creation/deployment process
