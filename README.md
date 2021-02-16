@@ -13,7 +13,7 @@ Launch automatic cloud dev workspaces ☁️
 ⚠️: Heroku does not have a persistant filesystem. Make sure you are using a git and pushing regularily.
 
 ## Ways to get started:
-- Deploy via the 1-click deploy.
+- Deploy via the 1-click deploy (only base image for now 😔)
 - Fork this repo, extend the image.
 - Deploy one of the [sample-images/](sample-images/) with Heroku's [container registry tutorial](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
