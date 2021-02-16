@@ -10,3 +10,4 @@ $ heroku config:set GIT_REPO=[https://github.com/.../...] -a [appname]
 $ heroku container:push web -a [appname]
 $ heroku container:release web -a [appname]
 ```
+Reference: [https://devcenter.heroku.com/articles/container-registry-and-runtime](https://devcenter.heroku.com/articles/container-registry-and-runtime)
