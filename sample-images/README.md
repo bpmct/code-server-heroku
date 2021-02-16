@@ -1,4 +1,4 @@
-# Deploy one of theese to Heroku:
+# Deploy one of these to Heroku:
 
 ```sh
 $ git clone https://github.com/bpmct/code-server-heroku
