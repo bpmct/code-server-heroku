@@ -6,7 +6,7 @@ $ cd sample-images/node-express-dev
 $ heroku container:login
 $ heroku create [appname]
 $ heroku config:set PASSWORD=[password] -a [appname]
+$ heroku config:set GIT_REPO=[https://github.com/.../...] -a [appname]
 $ heroku container:push web -a [appname]
 $ heroku container:release web -a [appname]
 ```
-S 
