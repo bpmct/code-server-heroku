@@ -1,3 +1,6 @@
+🔴 This repo is archived. Check out [deploy-code-server](https://github.com/bencdr/deploy-code-server)
+
+
 # code-server-heroku
 
 Launch automatic cloud dev workspaces ☁️
