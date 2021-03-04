@@ -1,4 +1,4 @@
-🔴 This repo is archived. Check out [deploy-code-server](https://github.com/bencdr/deploy-code-server)
+🔴 This repo is archived. Check out [deploy-code-server](https://github.com/bpmct/deploy-code-server)
 
 
 # code-server-heroku
